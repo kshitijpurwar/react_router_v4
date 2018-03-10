@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+h1{
+  line-height: 2;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.body{
+  display: flex
+}
+
+.sidebar{
+  height: 580px;
+  width: 25%;
+  border-right: 1px dashed black;
+  padding: 20px 0 20px 60px;
+  box-sizing: border-box;
+}
+
+
+.sidebar a{
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: grey;
+  text-align: left;
+}
+
+.container{
+  padding: 20px;
+  width: 75%;
+}
+
+.post{
+  line-height: 3rem;
+  font-size: 1.2rem;
+}
+
+.path{
+  background: white;
+  margin: 0 10px;
+  display: inline-block;
+  width: 200px;
+  color: #000;
+  padding: 5px 15px;
+  font-weight: 100;
+}
+
+.trans-enter{
+  opacity: 0;
+  z-index: 1;
+}
+.trans-enter.trans-enter-active{
+  opacity: 1;
+  transition: all 1000ms ease-in;
+}
+
+.trans-exit{
+  display: none;
+}
