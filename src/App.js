@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Home, Sidebar, Post, PageNotFound, Color, Person, Redirect as Stash } from "./components";
+import { Header, Home, Sidebar, Post, PageNotFound, Color, Person, Redirect as Stash, Nested } from "./components";
 import { BrowserRouter as Router, Route, Switch, Redirect  } from "react-router-dom";
 
 import './App.css';
@@ -14,7 +14,6 @@ class App extends Component {
             <Sidebar />
             <div className="container">
                   <Switch>
-                    <Route path='/' component={Home} exact={true} />
                     <Route path='/post/:id' component={Post} />
                     <Route path='/blue' render={() => {
                       return <Color color="blue" text="blue" />
@@ -37,6 +36,10 @@ class App extends Component {
                     <Redirect to='/redirect' from="/legacy" />
                     
                     <Route path='/redirect' component={Stash} />
+
+                    <Route path='/nested' component={Nested} />
+
+                    <Route path='/' component={Home} exact={true} />
 
                     <Route component={PageNotFound} />
                   </Switch>

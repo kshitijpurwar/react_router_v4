@@ -6,6 +6,7 @@ import PageNotFound from './page_not_found';
 import Color from './color';
 import Person from './person';
 import Redirect from './redirect';
+import Nested from './nested';
 
 export {
     Header,
@@ -15,5 +16,6 @@ export {
     PageNotFound,
     Color,
     Person,
-    Redirect
+    Redirect,
+    Nested
 }

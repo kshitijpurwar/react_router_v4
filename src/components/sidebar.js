@@ -23,12 +23,14 @@ const Links = [
     { to: '/colorbox/white/black', name: 'White on Black' },
     { to: '/colorbox/red/pink', name: 'Red on Pink' },
 
-    { to: '/person?firstname=Kshitij&lastname=Purwar&role=frontend&at=Hiver', name: 'Kshitij Purwar' },
+    { to: '/person?firstname=Kshitij&lastname=Purwar&role=frontend Engineer', name: 'Kshitij Purwar' },
     { to: '/person?firstname=Paul&lastname=Smith&role=backend&at=Google', name: 'Paul Smith' },
 
     { to: '/legacy', name: 'Broken legacy link'  },
     
-    { to: '/404', name: '404 Not found' }
+    { to: '/404', name: '404 Not found' },
+    { to: '/nested', name: 'Nested Routing' }
+
 
 ]
 
